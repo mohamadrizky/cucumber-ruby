@@ -1,0 +1,16 @@
+Feature: User Authentication
+Background:
+	Given the user is going to register new account on Amazon Online Shopping
+Scenario:
+	Given the user is on user authentication Page
+	And the user clicks the sign up button to go to sign up page
+	When the user inputs the correct email address
+	And the user creates the username
+	And the user inputs the correct password
+	And the user inputs the confirmation password
+	And the user clicks the sign up button
+	Then the user should be authenticated through email confirmation
+	And the user redirected to their email
+	And User clicks the confirmation link on the email
+	And the user should be redirected to their Amazon Online Dashboard
+	And the user should be presented with success message
